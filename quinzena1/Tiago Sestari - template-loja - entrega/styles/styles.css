@@ -1,0 +1,49 @@
+body {font-family: 'Comic Sans MS';
+      background-color: yellow;
+    }
+
+.header { 
+            display: flex;
+           justify-content: flex-end;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: cadetblue;
+            width: 100%;
+            padding: 4px;
+            
+
+}
+
+.header > a {
+    padding: 4px;
+    margin-right: 8px;
+    color: white;
+}
+a:link {background-color: cadetblue; text-decoration: none;}
+a:visited { background-color: cadetblue; text-decoration: none;}
+a:hover {background-color: yellow; color: black; text-decoration: none;}
+a:active {background-color: yellow; color: purple; text-decoration: none;}
+
+
+.rodape {display: flex;
+    justify-content: flex-end;
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     background-color: cadetblue;
+     width: 100%;
+     padding: 4px;
+    
+    }
+
+.rodape > img { width:2%;
+                margin-right:16px;}
+.main {
+    text-align: center;
+}
+
+.novo-produto {
+    background-color: cadetblue;
+    color: white;
+}
