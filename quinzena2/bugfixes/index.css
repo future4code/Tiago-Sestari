@@ -58,6 +58,14 @@ div img {
     text-align: center;
 }
 
+.descricao {
+    width: 100%;
+    margin: 0 auto;
+    position: absolute;
+    top: 150px;
+    font-family: arial;
+}
+
 .icone {
     height: 15px;
 }
