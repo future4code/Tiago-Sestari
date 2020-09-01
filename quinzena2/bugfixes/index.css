@@ -7,6 +7,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: "Roboto";
 }
 
 h2 {
@@ -19,6 +20,10 @@ h2 {
 input {
     height: 20px;
     width: 500px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 5px solid black;
 }
 
 button:focus {
@@ -65,7 +70,7 @@ div>p:first-child {
     margin: 0 auto;
     position: absolute;
     top: 150px;
-    font-family: arial;
+    
 }
 
 .icone {
@@ -114,10 +119,27 @@ div:last-child {
 table {
     width: 60%;
     text-align: center;
+    margin: 0 auto;
 }
 
-td button {
+td > button {
     background-color: #fadf63;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    color: black;
+}
+
+td > button:hover {
+    background-color: #b1992f;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    color: black;
+}
+
+td > button:active {
+    background-color: #b1992f;
     width: 150px;
     height: 30px;
     border-radius: 5px;
