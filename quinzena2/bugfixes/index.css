@@ -10,6 +10,9 @@
     font-family: "Roboto";
 }
 
+ol { list-style-type: decimal;
+    list-style-position: inside;}
+
 h2 {
     background-color: #fe7e02;
     padding: 10px 5px 10px 5px;
