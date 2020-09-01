@@ -10,8 +10,7 @@
     font-family: "Roboto";
 }
 
-ol { list-style-type: decimal;
-    list-style-position: inside;}
+
 
 h2 {
     background-color: #fe7e02;
@@ -83,6 +82,18 @@ div>p:first-child {
     height: 30px;
 }
 
+.icone:hover {
+    width: 30px;
+    height: 30px;
+    opacity: 10%;
+}
+
+.icone:active {
+    opacity: 100%;
+    width: 30px;
+    height: 30px;
+}
+
 a {outline: none;
     text-decoration: none; }
 
@@ -99,6 +110,8 @@ a {outline: none;
 
 #container-de-descricao>ol {
     padding: 15px 0px;
+    list-style-type: decimal;
+    list-style-position: inside;
 }
 
 #container-para-comprar {
