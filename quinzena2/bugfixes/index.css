@@ -110,9 +110,11 @@ a {outline: none;
 
 #container-de-descricao>ol {
     padding: 15px 0px;
-    list-style-type: decimal;
-    list-style-position: inside;
+    
 }
+
+ol { list-style-type: decimal;
+     list-style-position: inside;}
 
 #container-para-comprar {
     background-color: #e7eb90;
