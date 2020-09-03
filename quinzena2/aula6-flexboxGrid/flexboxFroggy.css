@@ -98,8 +98,7 @@ order: 2;
   }
   
   .red {
-   }#pond {
-    display: flex;
+  order: -3;
   }
   
 
@@ -175,3 +174,4 @@ flex-wrap: wrap;
   justify-content: center;
   align-content: space-between;
   }
+  
