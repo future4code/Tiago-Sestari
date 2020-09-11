@@ -34,6 +34,11 @@ header>h1>a:link:hover:active:visited {
     width: 30%;
 }
 
+@media screen and (max-width: 375px) {
+    header { font-size: 1em;}
+    
+}
+
 /*_______________________*/
 
 
@@ -44,6 +49,13 @@ header>h1>a:link:hover:active:visited {
     grid-template: repeat(4, 25%) / repeat(4, 25%);
     gap: 2em;
     margin: 0.5em;
+}
+
+@media screen and (max-width: 375px) {
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 /*VIDEO SPECIFIC*/
@@ -63,6 +75,16 @@ header>h1>a:link:hover:active:visited {
 .video-display>.video_title {
     font-size: 5em;
 }
+
+@media screen and (max-width: 375px) {
+
+    .video-display {height: 50%;}
+    .video-display>.video_title {
+        font-size: 2em;
+    }
+}
+
+
 
 /*------------------------*/
 
@@ -84,6 +106,23 @@ header>h1>a:link:hover:active:visited {
     font-size: 2em;
 }
 
+@media screen and (max-width: 375px) {
+    
+    .video_title {
+        
+        font-size: 1em;
+    }
+
+    .video {
+        border: 0px solid darkmagenta;
+    }
+
+    .video:hover {
+        opacity: 1;
+        border: 0px solid darkmagenta;
+    }
+}
+
 
 video {
     width: 80%;
@@ -96,9 +135,15 @@ video {
 /*FOOTER*/
 footer {
     font-size: 2em;
-    padding: 0 1em;
+    padding: 0.1em;
     background: darkmagenta;
     color: white;
 }
+
+@media screen and (max-width: 375px) {
+    
+    footer {font-size: 0.75em;}
+}
+
 /*_______________________*/
 
