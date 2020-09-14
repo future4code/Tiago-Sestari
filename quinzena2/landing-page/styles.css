@@ -1,0 +1,307 @@
+/*rgb(194, 57, 73)*/
+
+* {
+    margin: 0px;
+}
+
+/*HEADER STyLES*/
+
+header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 1em 0em;
+    background-color: rgb(194, 57, 73);
+}
+
+header>div>a>img {
+    width: 25%;
+    height: auto;
+}
+
+nav {
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+    font-size: 1.5em;
+}
+
+nav>div {
+
+    padding: 0 1em;
+
+}
+
+nav>div>a {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*__________________________*/
+
+/*MAIN CONTENT STYLES*/
+
+.main-content {
+    width: 100%;
+    
+}
+
+.capa {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.capa>img {
+    width: 30%;
+    height: auto;
+}
+
+.animations {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.solucoes {
+    background-color: rgb(194, 57, 73);
+    color: white;
+}
+/*_________________ANIMATION DA CAPA [START]_________________*/
+
+.a1 {
+    position: relative;
+    left: 0%;
+    opacity: 0;
+    animation-name: animation1;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    font-size: 2em;
+    color: rgb(194, 57, 73);
+
+    
+}
+
+@keyframes animation1 {
+    0%   {left: 0%; opacity: 0;}
+    5%  {opacity: 1;}
+    25% {left: 40%; opacity: 1;}
+    28% {left: 40%; opacity: 0;}
+  }
+
+.a2 {
+    position: relative;
+    left: 0%;
+    opacity: 0;
+    animation-name: animation2;
+    /*animation-delay: 4s;*/
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    color: rgb(194, 57, 73);
+    font-size: 2em;
+
+    
+}
+
+@keyframes animation2 {
+    25%   {left: 0%; opacity: 0;}
+    30%  {opacity: 1;}
+    50% {left: 20%; opacity: 1;}
+    53% {left: 20%; opacity: 0;}
+  }
+
+.a3 {
+    position: relative;
+    left: 0%;
+    opacity: 0;
+    animation-name: animation3;
+    /*animation-delay: 12s;*/
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    padding: 0.2em 0.2em;
+    background-color: rgb(194, 57, 73);
+    color: white;
+    width: fit-content;
+    font-size: 2em;
+       
+}
+
+@keyframes animation3 {
+    75%   {left: 0%; opacity: 0;}
+    80%  {opacity: 1;}
+    100% {left: 80%; opacity: 1;}
+  }
+
+
+  .a4 {
+    position: relative;
+    left: 0%;
+    opacity: 0;
+    animation-name: animation4;
+    /*animation-delay: 8s;*/
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    color: rgb(194, 57, 73);
+    font-size: 2em;
+
+    
+}
+
+@keyframes animation4 {
+    50%   {left: 0%; opacity: 0;}
+    55%  {opacity: 1;}
+    75% {left: 40%; opacity: 1;}
+    78% {left: 40%; opacity: 0;}
+  }
+
+
+
+/*_________________ANIMATION DA CAPA [END]_________________*/
+
+.quem-somos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.quem-somos>div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color:rgba(194, 57, 73, 0.7);
+    width: 40%;
+    border: 0.2em dashed rgba(194, 57, 73, 1);
+    
+    
+    padding: 1em 1em;
+    font-size: 2em;
+
+}
+
+.quem-somos>div>p { 
+    margin: 0.5em 0;
+    width: 100%;
+}
+
+.nossos-produtos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nossos-produtos>div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    color:rgba(194, 57, 73, 0.7);
+    width: 40%;
+    border: 0.2em dashed rgba(194, 57, 73, 1);
+    
+    margin-top: 2em;
+    
+    padding: 1em 1em;
+    font-size: 2em;
+
+
+}
+
+.onde-estamos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 2em;
+
+}
+
+.onde-estamos>p {
+    background-color: rgb(194, 57, 73); 
+    font-size: 2em;
+}
+
+.onde-estamos>img {
+    width: 50%;
+}
+/*__________________________*/
+
+
+/*FOOTER STYLES*/
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em;
+    background-color:  rgb(194, 57, 73);
+    color: white;
+}
+
+.redes-sociais {
+    display: flex;
+    justify-content: start;
+}
+
+.redes-sociais>a { 
+    display: flex; 
+    justify-content: flex-end;
+    width: 100px;
+}
+
+footer>div>a>img {
+    width: 20%;
+    height: auto;
+    
+}
+/*__________________________*/
+
+@media screen and (max-width: 375px) {
+
+    nav {
+        width: 75%;
+        font-size: 0.7em;
+    }
+
+    .a1 {font-size: 1em;}
+    .a2 {font-size: 1em;}
+    @keyframes animation2 {
+        25%   {left: 0%; opacity: 0;}
+        30%  {opacity: 1;}
+        50% {left: 10%; opacity: 1;}
+        53% {left: 10%; opacity: 0;}
+      }
+    .a3 {font-size: 1em;}
+    .a4 {font-size: 1em;}
+    @keyframes animation4 {
+        50%   {left: 0%; opacity: 0;}
+        55%  {opacity: 1;}
+        75% {left: 25%; opacity: 1;}
+        78% {left: 25%; opacity: 0;}
+      }
+
+    .quem-somos>div { font-size: 1em;}
+
+    .quem-somos>div>img { 
+        width: 100%;
+    }
+
+    .nossos-produtos>div { font-size: 1em;}
+
+    .nossos-produtos>div>img { 
+        width: 100%;
+    }
+    
+
+    .onde-estamos>p {
+        background-color: rgb(194, 57, 73); 
+        font-size: 1em;
+    }
+
+    footer {
+        font-size: 0.8em;
+    }
+}
