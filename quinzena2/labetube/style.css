@@ -1,0 +1,149 @@
+* {margin: 0;}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/*HEADER*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    height: 5vh;
+    font-size: 2em;
+    background: darkmagenta;
+}
+
+header>h1>a {
+    text-decoration: none;
+    color: white;
+}
+
+header>h1>a:link:hover:active:visited {
+    text-decoration: none;
+    color: white;
+}
+
+.searchbox {
+    height: 50%;
+    width: 30%;
+}
+
+@media screen and (max-width: 375px) {
+    header { font-size: 1em;}
+    
+}
+
+/*_______________________*/
+
+
+/*MAIN*/
+.main-content {
+    flex-grow: 1;
+    display: grid;
+    grid-template: repeat(4, 25%) / repeat(4, 25%);
+    gap: 2em;
+    margin: 0.5em;
+}
+
+@media screen and (max-width: 375px) {
+    .main-content {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/*VIDEO SPECIFIC*/
+.main-video {
+    display: flex;
+    width: 100%;
+    flex-grow: 1;
+}
+
+.video-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.video-display>.video_title {
+    font-size: 5em;
+}
+
+@media screen and (max-width: 375px) {
+
+    .video-display {height: 50%;}
+    .video-display>.video_title {
+        font-size: 2em;
+    }
+}
+
+
+
+/*------------------------*/
+
+.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.5em;
+    border: 1px solid darkmagenta;
+    text-decoration: none;
+}
+
+.video:hover {
+    opacity: 0.4;
+    border: 4px solid darkmagenta;
+}
+
+.video_title {
+    font-size: 2em;
+}
+
+@media screen and (max-width: 375px) {
+    
+    .video_title {
+        
+        font-size: 1em;
+    }
+
+    .video {
+        border: 0px solid darkmagenta;
+    }
+
+    .video:hover {
+        opacity: 1;
+        border: 0px solid darkmagenta;
+    }
+}
+
+
+video {
+    width: 80%;
+    height: 90%;
+}
+/*_______________________*/
+
+
+
+/*FOOTER*/
+footer {
+    font-size: 2em;
+    padding: 0.1em;
+    background: darkmagenta;
+    color: white;
+}
+
+@media screen and (max-width: 375px) {
+    
+    footer {font-size: 0.75em;}
+}
+
+/*_______________________*/
+
